@@ -48,8 +48,8 @@ export default class Index extends React.Component {
                                         <div className={styles.itemContent}>
                                             <p className={styles.title}><span className={styles.prjName}>{item.prjName}</span>{this.projectStatus(item.projectStatus)}</p>
                                             <p className={styles.prjManager}>{item.prjManager}</p>
-                                            <p >{item.prjStartDate.split(' ')[0]}</p>
-                                            <p className={styles.count}><span>任务:{item.taskCount}</span> <span>完成:{item.taskDoneCount}</span><span>进行:{item.taskDoingCount}</span><Icon type="star" theme="filled" style={{ color: '#facc16' }} /></p>
+                                            <p >立项日期: {item.prjStartDate.split(' ')[0]}</p>
+                                            <p className={styles.count}>{item.projectStatus === 'processing' && <><span>任务:{item.taskCount}</span> <span>完成:{item.taskDoneCount}</span><span>进行:{item.taskDoingCount}</span></>}<Icon type="star" theme="filled" style={{ color: '#facc16' }} /></p>
                                         </div>
                                     </div>
                                 </Card.Grid>
