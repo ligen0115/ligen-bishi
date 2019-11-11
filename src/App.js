@@ -5,7 +5,7 @@ import Index from './views/Index';
 function App() {
   return (
     <div className="App">
-      <Index/>
+      <Index />
     </div>
   );
 }
